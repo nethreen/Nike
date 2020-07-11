@@ -32,6 +32,19 @@
 
     width: 72px;
     height: 26px;
+    position: relative;
+}
+
+
+.nav>.nav-header>.nav-logo::after {
+    content: "";
+    width: 1px;
+    height: 1100px;
+    background-color: rgba(255, 255, 255, 0.346);
+    top: -80px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 .nav>.nav-header>.nav-logo>img {
@@ -47,14 +60,7 @@
 .nav>.nav-links {
     display: inline;
     font-size: 18px;
-}
-
-@media (min-width:767.9px) {
-    .nav>.nav-links {
-        display: flex;
-        justify-content: space-between;
-        width: 39.3%;
-    }
+    padding: 0px 94px 0 176px;
 }
 
 .nav>.nav-links>a {
@@ -63,6 +69,74 @@
     line-height: 17px;
     color: white;
     transition: .3s;
+    padding: 0 36px;
+}
+
+@media (max-width:1199.9px) {
+    .nav>.nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+
+    .nav>.nav-links>a {
+        padding: 0 10px;
+    }
+}
+
+
+@media (min-width:767.9px) {
+    .nav>.nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1199.9px) {
+    .line-1::after {
+        background-color: transparent !important;
+    }
+
+    .line-2::after {
+        background-color: transparent;
+    }
+
+    .line-3::after {
+        background-color: transparent;
+    }
+}
+
+@media (min-width:1199.9px) {
+
+    .line-2,
+    .line-3 {
+        position: relative;
+    }
+
+    .line-2::after {
+        content: "";
+        width: 1px;
+        height: 1100px;
+        background-color: rgba(255, 255, 255, 0.346);
+        top: -80px;
+        left: 34px;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .line-3::after {
+        content: "";
+        width: 1px;
+        height: 1100px;
+        background-color: rgba(255, 255, 255, 0.346);
+        top: -80px;
+        right: 34px;
+        position: absolute;
+    }
 }
 
 .nav>.nav-links>a:hover {
@@ -82,7 +156,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(#576899d0, #6c7cb29c);
+        background: #2C4F60;
     }
 
     .nav>.nav-btn-m>label {
@@ -90,7 +164,8 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
+        /* background:#2C4F60; */
     }
 
     .nav-btn-cc {

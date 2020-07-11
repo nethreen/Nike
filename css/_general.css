@@ -22,21 +22,45 @@ ul {
 
 @media (min-width: 769.9px) {
   .container {
-    width: 750px;
+    width: 730px;
 
   }
 }
-
 @media (min-width: 991.9px) {
   .container {
-    width: 970px;
+    width: 800px;
     padding: 0;
   }
 }
 
 @media (min-width: 1199.9px) {
   .container {
-    width: 1170px;
+    width: 1095px;
+    padding: 0;
+  }
+}
+.container-fluid{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto; 
+}
+@media (min-width: 769.9px) {
+  .container-fluid {
+    width: 730px;
+
+  }
+}
+@media (min-width: 991.9px) {
+  .container-fluid {
+    width: 800px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1199.9px) {
+  .container-fluid {
+    width: 1180px;
     padding: 0;
   }
 }
