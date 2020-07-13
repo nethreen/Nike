@@ -7,11 +7,15 @@
     <title>Nike</title>
 
     <!-- css link -->
+    <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="css/_general.css">
     <link rel="stylesheet" href="css/_header.css">
     <link rel="stylesheet" href="css/_style.css">
     <link rel="stylesheet" href="css/_walpaper-section.css">
-    <link rel="stylesheet" href="css/_news-item.css">
+    <link rel="stylesheet" href="css/_new-item-about.css">
+    <link rel="stylesheet" href="css/_product-slide.css">
+    <link rel="stylesheet" href="css/_latest-deals.css">
+    <link rel="stylesheet" href="css/_footer.css">
     <!-- /// css link -->
 
     <!-- fontawesome -->
@@ -22,115 +26,450 @@
 
 <body>
     <div class="landing-page">
-        <div class="container">
-            <div class="header-menu">
-                <div class="nav">
-                    <input type="checkbox" id="nav-check">
-                    <div class="nav-header">
-                        <div class="nav-logo line-1">
-                            <img src="img/png/nike 1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="nav-btn-m">
-                        <label for="nav-check">
-                            <div class="nav-btn-cc">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+        <div class="main">
+            <div class="container">
+                <div class="header-menu">
+                    <div class="nav">
+                        <input type="checkbox" id="nav-check">
+                        <div class="nav-header">
+                            <div class="nav-logo line-1">
+                                <img src="img/png/nike 1.png" alt="">
                             </div>
-                        </label>
-                    </div>
-
-                    <div class="nav-links">
-                        <a href="#" class="animation1 line-2" target="_blank">NEW ARRIVALS</a>
-                        <div class="dropdown ">
-                            <label class="dropdown--label ">
-                                <input type="checkbox" class="dropdown--checkbox" />
-                                <span class="dropdown--text animation2">
-                                    STORE
-                                    <span class="dropdown--arrow"></span>
-                                </span>
-
-                                <div class="dropdown--list">
-                                    <ul>
-                                        <li><a href="">item 1</a></li>
-                                        <li><a href="">item 2</a></li>
-
-                                    </ul>
+                        </div>
+                        <div class="nav-btn-m">
+                            <label for="nav-check">
+                                <div class="nav-btn-cc">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
                             </label>
                         </div>
-                        <a href="#" class="m-dnone" target="_blank">STORE </a>
-                        <a href="#" class="animation3 line-3" target="_blank">VIDEOS</a>
-                        <a href="#" class="animation4" target="_blank">BLOGS</a>
 
-                        <!-- dropdown -->
+                        <div class="nav-links">
+                            <a href="#" class="animation1 line-2" target="_blank">NEW ARRIVALS</a>
+                            <div class="dropdown ">
+                                <label class="dropdown--label ">
+                                    <input type="checkbox" class="dropdown--checkbox" />
+                                    <span class="dropdown--text animation2">
+                                        STORE
+                                        <span class="dropdown--arrow"></span>
+                                    </span>
 
-                        <!-- /// dropdown -->
+                                    <div class="dropdown--list">
+                                        <ul>
+                                            <li><a href="">item 1</a></li>
+                                            <li><a href="">item 2</a></li>
+
+                                        </ul>
+                                    </div>
+                                </label>
+                            </div>
+                            <a href="#" class="m-dnone" target="_blank">STORE </a>
+                            <a href="#" class="animation3 line-3" target="_blank">VIDEOS</a>
+                            <a href="#" class="animation4" target="_blank">BLOGS</a>
+
+                            <!-- dropdown -->
+
+                            <!-- /// dropdown -->
+
+                        </div>
+
+                        <div class="nav-button">
+                            <a href="#" class="button-store">
+                                <img src="img/svg/bag.svg" alt="">
+                            </a>
+                            <a href="#" class="login">
+                                Login
+                            </a>
+                        </div>
 
                     </div>
-
-                    <div class="nav-button">
-                        <a href="#" class="button-store">
-                            <i class="fas fa-briefcase"></i>
-                        </a>
-                        <a href="#" class="login">
-                            Login
-                        </a>
+                </div>
+                <div class="walpaper-section">
+                    <a href="#" class="walpaper-link link-arrow">ENJOY DISCOUNTS
+                    </a>
+                    <div class="vector-1">
+                        <img src="img/png/Vector 1 (Stroke).png" alt="">
                     </div>
-
+                    <div class="vector-2">
+                        <img src="img/png/Vector 2 (Stroke).png" alt="">
+                    </div>
+                    <div class="walpaper-title">
+                        <h3>
+                            YOU
+                        </h3>
+                        <h3>
+                            DESERVE
+                        </h3>
+                        <h3>
+                            ORIGINAL
+                        </h3>
+                    </div>
+                    <div class="walp-nike-shoe-sec">
+                        <img src="img/svg/Nike-Shoe-PNG 1.svg" class="nike-img" alt="">
+                        <img src="img/svg/Ellipse 5.svg" class="nike-shadow" alt="">
+                        <div id="circle-blur"></div>
+                        <div class="circle"></div>
+                        <div class="text-circle">
+                            <img src="img/svg/Group.svg" id="reload" alt="scroll">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="walpaper-section">
-                <a href="#" class="walpaper-link link-arrow">ENJOY DISCOUNTS
-                </a>
-                <div class="vector-1">
-                    <img src="img/png/Vector 1 (Stroke).png" alt="">
-                </div>
-                <div class="vector-2">
-                    <img src="img/png/Vector 2 (Stroke).png" alt="">
-                </div>
-                <div class="walpaper-title">
-                    <h3>
-                        YOU
-                    </h3>
-                    <h3>
-                        DESERVE
-                    </h3>
-                    <h3>
-                        ORIGINAL
-                    </h3>
-                </div>
-                <div class="walp-nike-shoe-sec">
-                    <img src="img/svg/Nike-Shoe-PNG 1.svg" class="nike-img" alt="">
-                    <img src="img/svg/Ellipse 5.svg" class="nike-shadow" alt="">
-                    <div id="circle-blur"></div>
-                    <div class="circle"></div>
-                    <div class="text-circle">
-                        <img src="img/svg/Group.svg" id="reload" alt="scroll">
+            <section class="new-item">
+                <div class="container-fluid">
+                    <!-- new item section -->
+                    <div class="new-item-section">
+                        <div class="bottom-links">
+                            <div class="mob-div"></div>
+                            <div class="bottom-links-title">
+                                <h2>
+                                    NEWEST <br> SHOES
+                                </h2>
+                            </div>
+                            <div class="link-parent">
+                                <a href="#" class="link-arrow news-item-link">ENJOY DISCOUNTS
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="new-item-about">
+                            <div class="nike-logo-about">
+                                <div class="mini-logo">
+                                    <img src="img/svg/nike 1.svg" alt="">
+                                </div>
+                                <div class="nike-logo-title">
+                                    <h4>NIKE</h4>
+                                    <span> RUNNERCLICK</span>
+                                </div>
+                                <p class="nike-p">Best fabric is used to <br>
+                                    produce these </p>
+                                <div class="button-carousel desktop-block">
+                                    <button id="prevBtn"><i class="fas fa-arrow-left"></i> </button>
+                                    <button id="nextBtn"> <i class="fas fa-arrow-right"></i></button>
+                                </div>
+
+                            </div>
+                            <div class="nike-slide-product">
+                                <div class="carousel-container">
+
+                                    <div class="carousel-slide">
+                                        <div class="sl">
+                                            <img src="img/svg/backgroundsvg.svg" id="lastClone" alt="">
+                                            <div class="circle-slide-1-1"></div>
+                                            <div class="circle-slide-1-2"></div>
+
+                                            <img id="myImage" class="image-22" src="img/png/Nike-Shoe-PNG 1.png">
+
+                                        </div>
+                                        <div class="sl">
+                                            <img src="img/svg/backgroundsvg.svg" id="lastClone" alt="">
+                                            <div class="circle-slide-1-1"></div>
+                                            <div class="circle-slide-1-2"></div>
+                                            <img id="myImage2" class="image-22" src="img/png/Nike-Shoe-PNG 1.png">
+
+                                        </div>
+                                        <div class="sl">
+                                            <img src="img/svg/backgroundsvg.svg" id="lastClone" alt="">
+                                            <div class="circle-slide-1-1"></div>
+                                            <div class="circle-slide-1-2"></div>
+                                            <img id="myImage3" class="image-22" src="img/png/Nike-Shoe-PNG 1.png">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nike-slide-about">
+
+                                <div class="image-scale-button">
+                                    <h5>Sizes</h5>
+                                    <button>37</button>
+                                    <button>38</button>
+                                    <button>39</button>
+                                    <button>40</button>
+                                    <button>41</button>
+                                </div>
+                                <div class="nike-rating">
+                                    <h5>Sizes</h5>
+                                    <i class="far fa-star "></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star gray"></i>
+                                </div>
+                                <div class="color-choise">
+                                    <h5>Color choice</h5>
+                                    <div class="colors">
+                                        <div class="image-controls-1">
+                                            <button
+                                                onclick="document.getElementById('myImage2').src='img/png/Nike-Shoe-PNG 1.png'"></button>
+                                            <button
+                                                onclick="document.getElementById('myImage2').src='img/png/Group 482 1.png'"></button>
+
+                                        </div>
+                                        <div class="image-controls-2">
+                                            <button
+                                                onclick="document.getElementById('myImage').src='img/png/Nike-Shoe-PNG 1.png'"></button>
+                                            <button
+                                                onclick="document.getElementById('myImage').src='img/png/Group 482 1.png'"></button>
+
+                                        </div>
+                                        <div class="image-controls-3">
+                                            <button
+                                                onclick="document.getElementById('myImage3').src='img/png/Nike-Shoe-PNG 1.png'"></button>
+                                            <button
+                                                onclick="document.getElementById('myImage3').src='img/png/Group 482 1.png'"></button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="product">
+                <div class="container-fluid">
+                    <!-- product slide -->
+                    <div class="product-slide">
+                        <div class="product-slide-header">
+                            <h3>EXPLORE</h3>
+                            <div class="button-product">
+                                <div class="controls">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <div class="thumbnail-slider">
+                                <div class="thumbnail-container">
+                                    <div class="item">
+                                        <div class="item-contain">
+                                            <img src="img/svg/shoe1.svg" class="item-img" alt="">
+                                            <div class="layer">
+                                                <img src="img/png/nike 1.png" alt="">
+                                                <a href="">
+                                                    Shop now
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item-text">
+                                            <h3>
+                                                Air Max <br>
+                                                <span>2090</span>
+                                            </h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="item ">
+                                        <div class="item-contain">
+
+                                            <img src="img/svg/shoe2.svg" class="item-img" alt="">
+                                            <div class="layer">
+                                                <img src="img/png/nike 1.png" alt="">
+                                                <a href="">
+                                                    Shop now
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item-text">
+                                            <h3>
+                                                Air Max <br>
+                                                <span>2090</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-contain">
+
+                                            <img src="img/svg/shoe3.svg" class="item-img" alt="">
+                                            <div class="layer">
+                                                <img src="img/png/nike 1.png" alt="">
+                                                <a href="">
+                                                    Shop now
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item-text">
+                                            <h3>
+                                                Air Max <br>
+                                                <span>2090</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-contain">
+
+                                            <img src="img/svg/shoe2.svg" class="item-img" alt="">
+                                            <div class="layer">
+                                                <img src="img/png/nike 1.png" alt="">
+                                                <a href="">
+                                                    Shop now
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item-text">
+                                            <h3>
+                                                Air Max <br>
+                                                <span>2090</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-images-item">
+                                <div class="item">
+                                    <div class="item-contain">
+                                        <img src="img/svg/shoe1.svg" class="item-img" alt="">
+                                        <div class="layer">
+                                            <img src="img/png/nike 1.png" alt="">
+                                            <a href="">
+                                                Shop now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-contain">
+                                        <img src="img/svg/shoe1.svg" class="item-img" alt="">
+                                        <div class="layer">
+                                            <img src="img/png/nike 1.png" alt="">
+                                            <a href="">
+                                                Shop now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- latest deals -->
+                    <div class="latest-deals-section">
+                        <div class="latest-deal">
+                            <!-- selectbox -->
+                            <div class="cont_select_center">
+
+                                <!-- Custom select structure -->
+                                <div class="select_mate" data-mate-select="active">
+                                    <select name="" onchange="" onclick="return false;" id="">
+                                        <option value="">Summer</option>
+                                        <option value="1">Fall</option>
+                                        <option value="2">Winter</option>
+                                        <option value="3">Spring</option>
+                                    </select>
+                                    <p class="selecionado_opcion" onclick="open_select(this)"></p><span
+                                        onclick="open_select(this)" class="icon_select_mate">
+                                        <!-- <svg width="14" height="8"
+                                        viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg> -->
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                    <div class="cont_list_select_mate">
+                                        <ul class="cont_select_int"> </ul>
+                                    </div>
+                                </div>
+                                <!-- Custom select structure -->
+
+
+                            </div> <!-- End div center   -->
+
+                            <h3>LATEST</h3>
+                            <h2>DEALS</h2>
+                            <p>Best fabric is used <br> to produce these</p>
+                            <img src="img/svg/latest-shoe.svg" class="latest-shoe" alt="">
+                            <div class="yellow-circle"></div>
+                            <div class="blue-circle"></div>
+                            <form class="subscribe-input">
+                                <input type="text" class="latest-mail-send" placeholder="YOUR EMAIL...">
+                                <div class="subscribe-arrow">SUBSCRIBE <i class="fas fa-long-arrow-alt-right"></i></div>
+
+                            </form>
+                            <div class="mobile-subscribe">
+                                SUBSCRIBE <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                        <div class="season-clothes">
+                            <div class="season-fall">
+                                <h2>
+                                    FALL
+                                </h2>
+                                <div>
+                                    <img src="img/png/tshirt.png" alt="">
+                                </div>
+                            </div>
+                            <div class="season-winter">
+                                <h2>
+                                    WINTER
+                                </h2>
+                                <div>
+                                    <img src="img/png/tshirtback.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="img/png/nike 1.png" alt="">
+                        </div>
+                        <ul>
+                            <li><a href="">GIFT CARDS</a></li>
+                            <li><a href="">PROMOTIONS</a></li>
+                            <li><a href="">FIND A STORE</a></li>
+                            <li><a href="">SIGN UP FOR EMAIL</a></li>
+                            <li><a href="">BECOME A MEMBER</a></li>
+                            <li><a href="">SEND US FEEDBACK</a></li>
+                            <li><a href="">GET HELP</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Order Status</a></li>
+                            <li><a href="">Shipping and Delivery</a></li>
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Payment Options</a></li>
+                            <li><a href="">Gift Card Balance</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">ABOUT NIKE</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Investors</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Purpose</a></li>
+                            <li><a href="">Sustainability</a></li>
+                            <li><a href="">CA Supply Chains Act</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <span>
+                            NIKE INC
+                        </span>
+                        <span>
+                            2020
+                        </span>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <div class="container-fluid">
-            <div class="news-item-section">
-                <div class="bottom-links">
-                    <div class="mob-div"></div>
-                    <div class="bottom-links-title">
-                        <h2>
-                            NEWEST <br> SHOES
-                        </h2>
-                    </div>
-                    <div class="sd">
-                        <a href="#" class="link-arrow news-item-link">ENJOY DISCOUNTS
-                        </a>
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
+
+
     </div>
     <script src="js/main.js"></script>
+    <script src="js/select.js"></script>
 </body>
 
 </html>

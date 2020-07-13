@@ -1,8 +1,10 @@
+
+
+
 body {
   padding: 0;
   margin: 0;
 }
-
 a {
   color: white;
   text-decoration: none;
@@ -45,15 +47,15 @@ ul {
   margin-right: auto;
   margin-left: auto; 
 }
-@media (min-width: 769.9px) {
+@media (min-width: 767.9px) {
   .container-fluid {
     width: 730px;
-
+    
   }
 }
 @media (min-width: 991.9px) {
   .container-fluid {
-    width: 800px;
+    width: 950px;
     padding: 0;
   }
 }

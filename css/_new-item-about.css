@@ -1,0 +1,530 @@
+.new-item-section {
+    width: 100%;
+    /* height: 400px; */
+    z-index: 10;
+}
+
+.news-item-link {
+    position: absolute;
+    right: 200px;
+    margin-top: -10px;
+}
+
+@media(max-width: 767.9px) {
+    .news-item-link {
+        left: 10px;
+        margin-top: 60px;
+        width: 150px;
+    }
+}
+
+
+.bottom-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -330px; */
+}
+
+.bottom-links>.link-parent {
+    width: 180px;
+}
+
+@media(max-width: 1199.9px) {
+    .bottom-links>.mob-div {
+        display: none;
+    }
+}
+
+.bottom-links-title {
+    /* margin-left: -180px; */
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    margin: 0;
+}
+
+@media(min-width: 767.9px) {
+    .bottom-links-title>h2>br {
+        display: none;
+    }
+}
+
+.new-item-about {
+    width: 100%;
+    height: 500px;
+    margin-top: -15px;
+}
+
+@media(max-width: 1199.9px) {
+    .new-item-about {
+        height: 350px;
+    }
+}
+
+@media(max-width: 767.9px) {
+    .new-item-about {
+        height: fit-content;
+        margin-top: 30px;
+    }
+}
+
+.nike-logo-about {
+
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 77px 86px 64px;
+}
+
+@media(max-width: 1199.9px) {
+    .nike-logo-about {
+        padding: 54px 40px;
+    }
+}
+
+.nike-logo-about>.mini-logo>img {
+    width: 72px;
+    height: 26px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    /* padding:0 96px; */
+
+}
+
+@media(max-width: 1199.9px) {
+    .nike-logo-about>.mini-logo>img {
+        margin-bottom: 20px;
+    }
+}
+
+.nike-logo-title {
+    color: #283664;
+}
+
+.nike-logo-title>h4 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.nike-p {
+    font-family: Montserrat;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 27px;
+    color: #283664;
+}
+
+.new-item-about {
+    display: flex;
+    position: relative;
+
+}
+
+@media(max-width: 767.9px) {
+    .new-item-about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Big carousel */
+
+
+.carousel-container {
+    width: 350px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.carousel-slide>div {
+    position: relative;
+    width: 350px;
+
+}
+
+.carousel-slide>div>p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 22;
+}
+
+.button-carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+/* 
+@media(max-width:767.9px) {
+    .desktop-block {
+        display: none;
+    }
+}
+
+@media(min-width:767.9px) {
+    .mobile-block {
+        display: none;
+    }
+
+} */
+
+.button-carousel>#prevBtn,
+.button-carousel>#nextBtn {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    outline: none;
+    background: #FFFFFF;
+    border: 2px solid rgba(40, 54, 100, 0.1);
+    margin: 81px 10px 0;
+}
+
+@media(max-width: 1199.9px) {
+
+    .button-carousel>#prevBtn,
+    .button-carousel>#nextBtn {
+        margin-top: 30px;
+    }
+}
+
+.button-carousel>#prevBtn>i,
+.button-carousel>#nextBtn>i {
+    font-size: 20px;
+    color: #283664;
+}
+
+.button-carousel>.prevBtn {
+    margin-left: 0;
+}
+
+/* /// Big carousel */
+
+
+/* carousel circle */
+/* like button */
+/* .like-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    d 
+}
+.like-button>i{
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.like-button>i:hover{
+    color:red;
+} */
+
+/* /// like button */
+
+
+@-webkit-keyframes circle-slide-1-1 {
+    0% {
+        -webkit-transform: translate(50px, 50px) rotate(0deg) translate(-50px, -50px);
+    }
+
+    13% {
+        -webkit-transform: translate(50px, 50px) rotate(45deg) translate(-50px, -50px);
+    }
+
+    25% {
+        -webkit-transform: translate(50px, 50px) rotate(90deg) translate(-50px, -50px);
+    }
+
+    38% {
+        -webkit-transform: translate(50px, 50px) rotate(135deg) translate(-50px, -50px);
+    }
+
+    50% {
+        -webkit-transform: translate(50px, 50px) rotate(180deg) translate(-50px, -50px);
+    }
+
+    63% {
+        -webkit-transform: translate(50px, 50px) rotate(225deg) translate(-50px, -50px);
+    }
+
+    75% {
+        -webkit-transform: translate(50px, 50px) rotate(270deg) translate(-50px, -50px);
+    }
+
+    88% {
+        -webkit-transform: translate(50px, 50px) rotate(315deg) translate(-50px, -50px);
+    }
+
+    100% {
+        -webkit-transform: translate(50px, 50px) rotate(360deg) translate(-50px, -50px);
+    }
+}
+
+.circle-slide-1-1 {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #00E0FF 0%, #111D42 100%);
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: "circle-slide-1-1";
+    -webkit-animation-iteration-count: infinite;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+
+
+
+@-webkit-keyframes circle-slide-1-2 {
+    0% {
+        -webkit-transform: translate(-50px, -50px) rotate(0deg) translate(50px, 50px);
+    }
+
+    13% {
+        -webkit-transform: translate(-50px, -50px) rotate(45deg) translate(50px, 50px);
+    }
+
+    25% {
+        -webkit-transform: translate(-50px, -50px) rotate(90deg) translate(50px, 50px);
+    }
+
+    38% {
+        -webkit-transform: translate(-50px, -50px) rotate(135deg) translate(50px, 50px);
+    }
+
+    50% {
+        -webkit-transform: translate(-50px, -50px) rotate(180deg) translate(50px, 50px);
+    }
+
+    63% {
+        -webkit-transform: translate(-50px, -50px) rotate(225deg) translate(50px, 50px);
+    }
+
+    75% {
+        -webkit-transform: translate(-50px, -50px) rotate(270deg) translate(50px, 50px);
+    }
+
+    88% {
+        -webkit-transform: translate(-50px, -50px) rotate(315deg) translate(50px, 50px);
+    }
+
+    100% {
+        -webkit-transform: translate(-50px, -50px) rotate(360deg) translate(50px, 50px);
+    }
+}
+
+
+
+
+.circle-slide-1-2 {
+    height: 94px;
+    width: 94px;
+    border-radius: 50%;
+    background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #00E0FF 0%, #111D42 100%);
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: "circle-slide-1-2";
+    -webkit-animation-iteration-count: infinite;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+/* 
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    top: 125px;
+}
+
+
+
+.slides {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    line-height: 400px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+.slide[data-state=active] {
+    display: block;
+}
+
+.indicator {
+    cursor: pointer;
+} */
+
+
+.nike-slide-about {
+    background: #F0F0F0;
+    /* width: 100%; */
+    height: 100%;
+    padding-left: 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-scale-button>button {
+    width: 65px;
+    height: 65px;
+    border: 1px solid #29646C;
+    box-sizing: border-box;
+    border-radius: 50%;
+    outline: none;
+    transition: .4s;
+    margin-right: 14px;
+}
+
+.image-scale-button>button:hover {
+    background: #29646C;
+    color: white;
+}
+
+.image-scale-button>h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    margin: 0 0 14px;
+    color: #29646C;
+}
+
+.nike-slide-about>.nike-rating>i {
+    margin-right: 10px;
+    color: #29646C;
+    font-size: 20px;
+}
+.nike-slide-about>.nike-rating>.gray {
+    color: #98afb2;
+}
+
+.nike-rating>h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    margin: 14px 0;
+    color: #29646C;
+}
+
+.color-choise>h5{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    margin: 14px 0;
+    color: #29646C;
+}   
+
+
+/* .indicators{
+    position: absolute;
+    top
+    border: 1px solid black;
+    width: 50px;
+    border-radius: 20px;
+}*/
+.colors{
+    display: flex;
+}
+.image-22{
+    position: absolute;
+    top: 150px;
+    left:60px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.image-controls-1,.image-controls-2,.image-controls-3{
+    width: 40px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 30px;
+    /* border: 1px solid red; */
+    background-color: #48616434;
+    padding: 0 5px;
+}
+/* .image-controls-1:focus{
+    border: 1px solid black !important;
+
+} */
+/* ,.image-controls-2:focus,.image-controls-3:focus{
+} */
+
+.image-controls-1>button,
+.image-controls-2>button,
+.image-controls-3>button{
+    width: 16px;
+    height: 16px;
+    /* margin: 6px; */
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.image-controls-1>button:nth-child(1){
+    background: #0051C9;
+    /* margin-left: 5px; */
+}
+.image-controls-1>button:nth-child(2){
+    background: #E83405;
+    /* margin-right: 5px; */
+
+}
+.image-controls-2>button:nth-child(1){
+    background: #0051C9;
+}
+.image-controls-2>button:nth-child(2){
+    background: #262E4D;
+}
+
+.image-controls-3>button:nth-child(1){
+    background: #fff;
+}
+.image-controls-3>button:nth-child(2){
+    background: #362A52;
+}
+
+
+
+

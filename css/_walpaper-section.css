@@ -12,6 +12,11 @@
     }
 }
 
+@media (max-width:499.9px) {
+    .walpaper-section {
+        height:450px;
+    }
+}
 
 /* hover arrow */
 .walpaper-link {
@@ -155,7 +160,7 @@
 
 .walpaper-title {
     position: absolute;
-    top: 250px;
+    top: 220px;
 }
 
 @media (max-width:991.9px) {
@@ -169,26 +174,30 @@
     margin: 0;
     font-family: American Captain;
     font-style: Regular;
-    font-size: 170px;
+    font-size: 200px;
     color: rgba(255, 255, 255, 0.394);
+    letter-spacing: 35px;
 
 }
 
 @media (max-width:991.9px) {
     .walpaper-title>h3 {
         font-size: 100px;
+        letter-spacing: 20px;
     }
 }
 
 @media (max-width:767.9px) {
     .walpaper-title>h3 {
         font-size: 60px;
+        letter-spacing: 10px;
     }
 }
 
 @media(max-width: 567.9px) {
     .walpaper-title>h3 {
         font-size: 44px;
+        letter-spacing: 5px;
     }
 }
 
@@ -198,23 +207,27 @@
     font-style: Regular;
     font-size: 124px;
     color: #ffd56953;
+    letter-spacing: 25px;
 }
 
 @media (max-width:991.9px) {
     .walpaper-title>:nth-child(3) {
         font-size: 90px;
+        letter-spacing: 15px;
     }
 }
 
 @media (max-width:767.9px) {
     .walpaper-title>:nth-child(3) {
         font-size: 50px;
+        letter-spacing: 10px;
     }
 }
 
 @media(max-width: 567.9px) {
     .walpaper-title>:nth-child(3) {
         font-size: 34px;
+        letter-spacing: 5px;
     }
 }
 

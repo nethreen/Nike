@@ -1,0 +1,320 @@
+.product-slide {
+    padding: 72px 0 24px;
+}
+
+@media (max-width:767.9px) {
+    section.product>.container-fluid {
+
+        padding: 0;
+    }
+}
+
+.product-slide-header {
+    padding: 57px 42px 57px 120px;
+    background: #103459;
+}
+
+
+
+
+.product-slide-header>h3 {
+    margin: 0;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.product-slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnail-slider {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+
+}
+
+.thumbnail-slider>.thumbnail-container {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    transition: margin 1s ease;
+}
+
+.item {
+    height: 400px;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    float: left;
+    overflow: hidden;
+    position: relative;
+
+    margin: 10px 0 !important;
+
+}
+
+.item-contain {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.item>.item-contain>.item-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: all 0.3s;
+    display: block;
+    transform: scale(1);
+}
+
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #262e4d34;
+    /* opacity: 0.0; */
+    visibility: hidden;
+    /* z-index: 9; */
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.layer>a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 41px;
+    margin: 27px 36px;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #262E4D;
+    z-index: 2;
+    /* transition: .2s; */
+}
+
+.layer>img {
+    margin: 48px 0 0 36px;
+    z-index: 2;
+}
+
+
+.layer>a:hover {
+    background-color: #262E4D;
+    color: #fff;
+}
+
+/* dots */
+.controls {
+    width: 100%;
+    /* float: left; */
+    /* padding: 15px; */
+}
+
+.controls>ul {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.controls>ul>li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #c3c3c3;
+    list-style: none;
+    margin: 4px;
+    display: inline-block;
+    line-height: 33px;
+}
+
+.controls>ul>li {
+    width: 62px;
+    height: 62px;
+    border: 1px solid #c3c3c3;
+    list-style: none;
+    background-color: white;
+    margin: 4px;
+    display: inline-block;
+    line-height: 33px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+/* .controls>ul>li:first-child {
+    background-color: white;
+} */
+
+.controls>ul>li:first-child::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f060";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #103459 !important;
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+.controls>ul>li:last-child::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #103459;
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+.item-text {
+    display: flex;
+}
+.product-images-item{
+    display: flex;
+}
+@media (max-width:767.9px) {
+    .product-slide-header {
+        padding: 30px 0;
+        background: #29646C;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-images-item{
+        display: none;
+    }
+    .item>.item-contain {
+        width: 100%;
+        height: 300px;
+        transition: all 0.3s;
+        display: block;
+        transform: scale(1);
+        position: relative;
+        background-color: #F6F6F6;
+    }
+
+    .item>.item-contain>.item-img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+        transition: all 0.3s;
+        display: block;
+        transform: scale(1);
+    }
+
+    .item>.item-contain:hover .item-img {
+        transform: scale(1);
+
+    }
+
+    .product-slide-header>h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .product-slide-header>.controls {
+        padding: 0;
+    }
+
+    .controls>ul>li {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .controls>ul>li:last-child::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f061";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: #103459;
+        position: absolute;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    .controls>ul>li:first-child::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f060";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: #103459 !important;
+        position: absolute;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .item-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+        text-align: start;
+    }
+
+    .item-text>h3 {
+        color: #C65652;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        margin: 0;
+    }
+    .item-text>h3>span {
+        color: #262E4D;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        margin: 0;
+    }
+}
+
+.item>.item-contain:hover .layer {
+    visibility: visible;
+}
+
+.item>.item-contain:hover .item-img {
+    transform: scale(1.2);
+
+}
+
+.product-images-item>.item{
+    margin: 0;
+}
+/* .product-images-item>.item:first-child{
+    margin-right: 0px;
+}  */
+.product-image{
+    display: flex;
+    flex-direction: column;
+}
