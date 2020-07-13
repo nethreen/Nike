@@ -39,7 +39,7 @@
 .nav>.nav-header>.nav-logo::after {
     content: "";
     width: 1px;
-    height: 953px;
+    height: 1000px;
     background-color: rgba(255, 255, 255, 0.346);
     top: -80px;
     left: 0;
@@ -119,19 +119,19 @@
     .line-2::after {
         content: "";
         width: 1px;
-        height: 950px;
+        height: 1000px;
         background-color: rgba(255, 255, 255, 0.346);
         top: -80px;
         left: 34px;
         position: absolute;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
 
     .line-3::after {
         content: "";
         width: 1px;
-        height: 950px;
+        height: 1000px;
         background-color: rgba(255, 255, 255, 0.346);
         top: -80px;
         right: 34px;
@@ -229,12 +229,12 @@
 
     .animation1 {
         animation-name: animation1;
-        animation-duration: 4s;
+        animation-duration: 5s;
     }
 
     @keyframes animation1 {
         0% {
-            left: -200px;
+            left: -1100px;
             top: 0px;
         }
 
@@ -246,12 +246,12 @@
 
     .animation2 {
         animation-name: animation2;
-        animation-duration: 4s;
+        animation-duration: 5s;
     }
 
     @keyframes animation2 {
         0% {
-            left: -270px;
+            left: -1400px;
             top: 0px;
         }
 
@@ -263,12 +263,12 @@
 
     .animation3 {
         animation-name: animation3;
-        animation-duration: 4s;
+        animation-duration: 5s;
     }
 
     @keyframes animation3 {
         0% {
-            left: -340px;
+            left: -1700px;
             top: 0px;
         }
 
@@ -280,12 +280,12 @@
 
     .animation4 {
         animation-name: animation4;
-        animation-duration: 4s;
+        animation-duration: 5s;
     }
 
     @keyframes animation4 {
         0% {
-            left: -410px;
+            left: -2000px;
             top: 0px;
         }
 

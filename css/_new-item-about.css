@@ -2,17 +2,18 @@
     width: 100%;
     /* height: 400px; */
     z-index: 10;
+    position: relative;
 }
 
 .news-item-link {
     position: absolute;
-    right: 200px;
+    right: 80px;
     margin-top: -10px;
 }
 
 @media(max-width: 767.9px) {
     .news-item-link {
-        left: 10px;
+        left: 2px;
         margin-top: 60px;
         width: 150px;
     }
@@ -38,7 +39,7 @@
 
 .bottom-links-title {
     /* margin-left: -180px; */
-    font-size: 30px;
+    font-size: 29px;
     line-height: 50px;
     color: #fff;
     margin: 0;
@@ -58,7 +59,10 @@
 
 @media(max-width: 1199.9px) {
     .new-item-about {
-        height: 350px;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
 }
 
@@ -66,6 +70,8 @@
     .new-item-about {
         height: fit-content;
         margin-top: 30px;
+        display: flex;
+
     }
 }
 
@@ -76,14 +82,21 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 77px 86px 64px;
+    padding: 77px 103px 64px;
 }
 
 @media(max-width: 1199.9px) {
     .nike-logo-about {
-        padding: 54px 40px;
+        padding: 0;
+        width: 60%;
+
     }
 }
+
+/* @media(max-width: 991.9px) {
+    .nike-logo-about {
+    }
+} */
 
 .nike-logo-about>.mini-logo>img {
     width: 72px;
@@ -91,17 +104,27 @@
     object-fit: contain;
     margin-bottom: 30px;
     /* padding:0 96px; */
-
 }
 
-@media(max-width: 1199.9px) {
-    .nike-logo-about>.mini-logo>img {
-        margin-bottom: 20px;
-    }
-}
 
 .nike-logo-title {
     color: #283664;
+}
+
+@media(max-width: 1199.9px) {
+    .nike-logo-about {
+        padding: 30px 0;
+    }
+
+    .nike-logo-title,
+    .nike-p,
+    .mini-logo {
+        padding-left: 70px;
+    }
+
+    .nike-logo-about>.mini-logo>img {
+        margin-bottom: 20px;
+    }
 }
 
 .nike-logo-title>h4 {
@@ -142,11 +165,61 @@
     /* border: 1px solid black; */
 }
 
+
 .carousel-slide {
     display: flex;
     width: 100%;
     height: 300px;
 }
+
+@media (max-width:1199.0px) {
+    .carousel-slide {
+        height: 500px;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .nike-slide-product {
+        width: 40%;
+        background-color: #29646C;
+    }
+
+    .button-carousel {
+        padding-left: 70px;
+    }
+}
+
+@media (max-width:767.0px) {
+    .carousel-container {
+        width: 300px;
+    }
+    .button-carousel {
+        position: absolute;
+        /* left: 45%; */
+        bottom: 280px;
+        left: 50%;
+        transform: translate(-65%, 0);
+    }
+    .nike-slide-product {
+        width: 100%;
+        /* background-color: #29646C; */
+    }
+
+    .carousel-slide {
+        height: 400px;
+    }
+
+    .nike-logo-about {
+        width: 100%;
+    }
+
+    .new-item-section {
+        margin-left: 10px;
+    }
+}
+
 
 .carousel-slide>div {
     position: relative;
@@ -165,8 +238,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 }
+
 /* 
 @media(max-width:767.9px) {
     .desktop-block {
@@ -200,6 +274,13 @@
     .button-carousel>#prevBtn,
     .button-carousel>#nextBtn {
         margin-top: 30px;
+    }
+}
+
+@media(max-width: 1199.9px) and (min-width:767.9) {
+
+    .nike-slide-about {
+        padding: 30px;
     }
 }
 
@@ -349,6 +430,7 @@
     left: 40%;
     top: 40%;
 }
+
 /* 
 .carousel {
     height: 100%;
@@ -393,13 +475,15 @@
 
 .nike-slide-about {
     background: #F0F0F0;
-    /* width: 100%; */
-    height: 100%;
-    padding-left: 48px;
+    width: 100%;
+    /* height: 100%; */
+    /* padding-left: 0; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .image-scale-button>button {
@@ -411,6 +495,24 @@
     outline: none;
     transition: .4s;
     margin-right: 14px;
+
+}
+
+ 
+.image-scale-button {
+    padding-left: 40px;
+
+}
+
+@media(max-width: 767.9px) {
+    .image-scale-button>button {
+        width: 35px;
+        height: 35px;
+        margin-right: 7px;
+    }
+    .nike-slide-about{
+        padding-top: 100px;
+    }
 }
 
 .image-scale-button>button:hover {
@@ -425,15 +527,22 @@
     line-height: 170%;
     margin: 0 0 14px;
     color: #29646C;
+    /* padding-left:40px; */
 }
 
 .nike-slide-about>.nike-rating>i {
     margin-right: 10px;
     color: #29646C;
     font-size: 20px;
+
 }
+
 .nike-slide-about>.nike-rating>.gray {
     color: #98afb2;
+}
+
+.nike-rating {
+    padding-left: 40px;
 }
 
 .nike-rating>h5 {
@@ -443,16 +552,20 @@
     line-height: 170%;
     margin: 14px 0;
     color: #29646C;
+    /* padding-left:40px; */
+
 }
 
-.color-choise>h5{
+.color-choise>h5 {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 170%;
     margin: 14px 0;
     color: #29646C;
-}   
+    padding-left: 40px;
+
+}
 
 
 /* .indicators{
@@ -462,18 +575,26 @@
     width: 50px;
     border-radius: 20px;
 }*/
-.colors{
+.colors {
     display: flex;
+    padding-left: 40px;
+
 }
-.image-22{
+
+.image-22 {
     position: absolute;
     top: 150px;
-    left:60px;
+    left: 30px;
     width: 200px;
     height: 200px;
     object-fit: contain;
+    padding-left: 40px;
+
 }
-.image-controls-1,.image-controls-2,.image-controls-3{
+
+.image-controls-1,
+.image-controls-2,
+.image-controls-3 {
     width: 40px;
     height: 32px;
     display: flex;
@@ -485,6 +606,7 @@
     background-color: #48616434;
     padding: 0 5px;
 }
+
 /* .image-controls-1:focus{
     border: 1px solid black !important;
 
@@ -494,7 +616,7 @@
 
 .image-controls-1>button,
 .image-controls-2>button,
-.image-controls-3>button{
+.image-controls-3>button {
     width: 16px;
     height: 16px;
     /* margin: 6px; */
@@ -502,29 +624,30 @@
     border: none;
     outline: none;
 }
-.image-controls-1>button:nth-child(1){
+
+.image-controls-1>button:nth-child(1) {
     background: #0051C9;
     /* margin-left: 5px; */
 }
-.image-controls-1>button:nth-child(2){
+
+.image-controls-1>button:nth-child(2) {
     background: #E83405;
     /* margin-right: 5px; */
 
 }
-.image-controls-2>button:nth-child(1){
+
+.image-controls-2>button:nth-child(1) {
     background: #0051C9;
 }
-.image-controls-2>button:nth-child(2){
+
+.image-controls-2>button:nth-child(2) {
     background: #262E4D;
 }
 
-.image-controls-3>button:nth-child(1){
+.image-controls-3>button:nth-child(1) {
     background: #fff;
 }
-.image-controls-3>button:nth-child(2){
+
+.image-controls-3>button:nth-child(2) {
     background: #362A52;
 }
-
-
-
-

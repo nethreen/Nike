@@ -2,3 +2,43 @@
     background: #184146;
     height: 1100px;
 }
+
+.like-button {
+    display: none;
+  }
+  
+  .like-icon {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width:991.9px){
+      .like-icon{
+          right: 70px;
+      }
+  }
+  .like-icon>svg{
+      width: 30px;
+      height: 30px;
+  }
+  .str0 {
+    stroke:#a7a7a7;
+  }
+  
+  .fil0 {
+    fill: #cccbcb;
+  }
+  
+  .like-button:checked+svg .fil0 {
+    fill: #F5405B;
+  }
